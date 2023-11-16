@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #484848;
+}
+button {
+    width: 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+    border: none;
+}
+.bar, button, .health {
+    height: 40px;
+    border-radius: 10px;
+}
+.bar, .health {
+    width: 500px;
+}
+button, .bar {
+    margin: 5px;
+}
+.bar {
+    padding: 0;
+    background-color: #2e2e2e;
+    position: relative;
+}
+.health {
+    background-color: #50f35b;
+    width: 5px;
+    display: flex;
+}
+.healthtext {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
