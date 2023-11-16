@@ -4,6 +4,19 @@ let healthDOM = 1;
 let widthDOM = 5;
 const healthDOMtext = "/100";
 
+function extraction(bruh) {
+    let char = bruh.code;
+    let Xchar = char.substring(3);
+    move(Xchar);
+    console.log(Xchar);
+}
+function move(X) {
+    if (X === "al") {
+        addcheck();
+    } if (X === "us") {
+        remcheck();
+    }
+}
 const addH = () => {
     widthDOM += 5;
     health.style.width = widthDOM + "px";
@@ -32,3 +45,4 @@ const remcheck = () => {
         return;
     }
 }
+document.addEventListener("keydown", extraction);
